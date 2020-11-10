@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registrar Usuario</title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/Register.css">
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="../css/Index.css">
+</head>
+
+<body>
+
+	<header>
+		<ul>
+			<li>
+				<h2>ACME</h2>
+			</li>
+			<li class="index">
+				<a href="Index.html">Ir a inicio</a></li>
+		</ul>
+	</header>
+
+	<div class="container-form">
+		<form class="register" id="register-form">
+			<h2>Registrar usuario</h2>
+			<label>Nombres</label>
+			<p id="error" hidden>Algunas casillas están vacias</p>
+			<input required type="text"  placeholder="nombres" id="name">
+			<label>Edad:</label>
+			<input required type="number" placeholder="Edad" id="edad">
+			<label>Genero:</label>
+			<select required type="text" id="genero">
+				<option value="Masculino">Masculino</option>
+				<option value="Femenino">Femenino</option>
+				<option value="Otro">Otro</option>
+			</select>
+			<label>Departamento:</label>
+			<input required type="text"  placeholder="Departamento" id="depart">
+			<label>Ciudad:</label>
+			<input required type="text"  placeholder="Ciudad" id="city">
+			<label>Direccion:</label>
+			<input required type="text"  placeholder="Direccion" id="direccion">
+			<label>Celular:</label>
+			<input required type="number"  placeholder="Celular" id="celular">
+			<label>Telefono fijo:</label>
+			<input required type="number"  placeholder="Telefono" id="telefono">
+			<label>Cedula:</label>
+			<input required type="text"  placeholder="Cedula" id="dni">
+			<label> Email: </label>
+			<input required type="text" placeholder="example@hotmail.com" id="email" />
+			<label>Contraseña:</label>
+			<input required type="password"  placeholder="Contraseña" id="pass">
+			<!--<a data-target="role" value="medico" hidden></a> -->
+			
+			<input type="submit" value="Registrarse">
+
+
+		</form>
+	</div>
+
+</body>
+<script src="../js/Register.js"></script>
+
+</html>
